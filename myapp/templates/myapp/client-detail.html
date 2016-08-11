@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+<div>
+	<table style="width:100%">
+  		<tr>
+  			<p>{{ client.date_created }}</p>
+    		<p>{{ client.phone }}</p>
+    		<p>{{ client.first_name }}{{ client.last_name }}</p>
+    		<p>{{ client.address_1 }}</p>
+    		<p>{{ client.address_2 }}</p>
+    	</tr>
+</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+<p><a href="/myapp/clients/create/" <span class="glyphicon glyphicon-plus"></span></a></p>
+{% for client in latest_client_list %}
+	<div>
+		<a href="/myapp/clients/{{ client.id }}/"> {{ client.first_name }} {{ client.last_name }}</a><a href="/myapp/clients/{{ client.id }}/delete/"<span class="glyphicon glyphicon-remove"></span></a>
+	</div>
+{% endfor %}
+{% endblock %}
